@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="flex justify-content-center align-content-center">
+    <div class="card" style="width: 1000px; height: 600px; margin-top: 40px">
+      <div class="card-header">
+        <h3>Student List</h3>
+      </div>
+      <div class="card-content">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Roll Number</th>
+              <th>Class</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let student of students">
+              <td>{{ student.id }}</td>
+              <td>{{ student.name }}</td>
+              <td>{{ student.rollNumber }}</td>
+              <td>{{ student.class }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

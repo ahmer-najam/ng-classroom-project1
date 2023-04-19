@@ -8,3 +8,6 @@
   "json-server": "json-server --watch studentDb.json"
 - RUN JSON-SERVER
   npm run json-server
+
+- SERVICES
+  ng g s --skip-tests services/student

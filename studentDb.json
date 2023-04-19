@@ -29,6 +29,18 @@
       "name": "Shuja",
       "class": "IT",
       "rollNumber": "R-00105"
+    },
+    {
+      "id": 106,
+      "name": "Qayyum",
+      "class": "IT",
+      "rollNumber": "R-00106"
+    },
+    {
+      "id": 107,
+      "name": "Nisar",
+      "class": "IT",
+      "rollNumber": "R-00107"
     }
   ]
 }

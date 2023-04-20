@@ -1,0 +1,6 @@
+.my-selected-row {
+  cursor: pointer;
+}
+.my-selected-row:hover {
+  background-color: lightgray;
+}

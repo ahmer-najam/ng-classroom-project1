@@ -1,0 +1,92 @@
+<div class="container d-flex justify-content-center align-items-center vh-100">
+  <div class="card" style="width: 1000px; height: 70%; margin-top: 40px">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <h3>Student Form</h3>
+      <span class="badge bg-secondary"
+        >Total Students: {{ this.service.studentList.length }}</span
+      >
+    </div>
+    <div class="card-content">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <!-- Put Form Input Elemets here -->
+
+        <!-- Put Form here -->
+        <div class="form-group m-2">
+          <label for="id">ID</label>
+          <input
+            formControlName="id"
+            id="id"
+            name="id"
+            class="form-control"
+            readonly
+          />
+          <!-- Put Validation here -->
+        </div>
+
+        <div class="form-group m-2">
+          <label for="name">Name</label>
+          <input
+            formControlName="name"
+            id="name"
+            name="name"
+            class="form-control"
+          />
+          <!-- Put Validation here -->
+          <small *ngIf="!form.get('name').valid && form.get('name').touched">
+            Name must be entered
+          </small>
+        </div>
+
+        <div class="form-group m-2">
+          <label for="id">Roll Number</label>
+          <input
+            formControlName="rollNumber"
+            id="rollNumber"
+            name="rollNumber"
+            class="form-control"
+          />
+          <!-- Put Validation here -->
+          <small
+            *ngIf="
+              !form.get('rollNumber').valid && form.get('rollNumber').touched
+            "
+          >
+            Roll Number must be entered
+          </small>
+        </div>
+
+        <div class="form-group m-2">
+          <label for="id">Class</label>
+          <input
+            formControlName="class"
+            id="class"
+            name="class"
+            class="form-control"
+          />
+          <!-- Put Validation here -->
+          <small *ngIf="!form.get('class').valid && form.get('class').touched">
+            Class must be entered
+          </small>
+        </div>
+
+        <hr />
+        <button
+          type="submit"
+          class="btn btn-block btn-secondary"
+          style="width: 100%"
+          [disabled]="!this.form.valid"
+        >
+          Submit
+        </button>
+        <button
+          type="button"
+          class="btn btn-block btn-secondary mt-2"
+          style="width: 100%"
+          (click)="onNavigateBack()"
+        >
+          Back To List
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

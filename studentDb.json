@@ -41,6 +41,30 @@
       "name": "Nisar",
       "class": "IT",
       "rollNumber": "R-00107"
+    },
+    {
+      "name": "Shahbaz",
+      "class": "IT",
+      "rollNumber": "R-00108",
+      "id": 108
+    },
+    {
+      "name": "Fazeel Haider",
+      "rollNumber": "R-00109",
+      "class": "MBE-II",
+      "id": 109
+    },
+    {
+      "name": "Farhan Khan",
+      "rollNumber": "R-00110",
+      "class": "MBE-III",
+      "id": 110
+    },
+    {
+      "name": "Rahul Khanna",
+      "rollNumber": "R-00111",
+      "class": "MBE-I",
+      "id": 111
     }
   ]
 }
